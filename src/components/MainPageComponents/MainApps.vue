@@ -1,9 +1,37 @@
 <template>
-  <div class="main-apps">
+  <div class="main-apps" id="main-apps">
     <main class="section">
       <div class="container">
-        <h2 class="section__title">Apps</h2>
+        <h2 class="section__title">Проекты и приложения</h2>
+        <p class="section__subtitle">
+          (Все проекты не позиционируются как серьезные, они были созданы в
+          учебных целях, для подкрепления знаний по Vue)
+        </p>
         <ul class="projects">
+          <li class="project">
+            <a
+              class="project__link"
+              href="https://fest.stepiveter.ru/"
+              target="_blank"
+            >
+              <img
+                class="project__img"
+                src="@/assets/IconApps/steppeandwind.jpg"
+                alt=""
+              />
+              <h3 class="project__title">Степь и ветер</h3>
+            </a>
+          </li>
+          <li class="project">
+            <router-link class="project__link" to="apps/rollshop/">
+              <img
+                class="project__img"
+                src="@/assets/IconApps/rollshop.jpg"
+                alt=""
+              />
+              <h3 class="project__title">Roll Shop</h3>
+            </router-link>
+          </li>
           <li class="project">
             <router-link class="project__link" to="apps/todo/">
               <img
@@ -15,44 +43,24 @@
             </router-link>
           </li>
           <li class="project">
-            <img
-              class="project__img"
-              src="@/assets/IconApps/sample_1.jpg"
-              alt=""
-            />
-            <h3 class="project__title">Todo App</h3>
+            <router-link class="project__link" to="apps/dice/">
+              <img
+                class="project__img"
+                src="@/assets/IconApps/Dice.jpg"
+                alt=""
+              />
+              <h3 class="project__title">Игра в кости</h3>
+            </router-link>
           </li>
           <li class="project">
-            <img
-              class="project__img"
-              src="@/assets/IconApps/sample_2.jpg"
-              alt=""
-            />
-            <h3 class="project__title">Todo App</h3>
-          </li>
-          <li class="project">
-            <img
-              class="project__img"
-              src="@/assets/IconApps/sample_3.jpg"
-              alt=""
-            />
-            <h3 class="project__title">Todo App</h3>
-          </li>
-          <li class="project">
-            <img
-              class="project__img"
-              src="@/assets/IconApps/sample_4.jpg"
-              alt=""
-            />
-            <h3 class="project__title">Todo App</h3>
-          </li>
-          <li class="project">
-            <img
-              class="project__img"
-              src="@/assets/IconApps/sample_5.jpg"
-              alt=""
-            />
-            <h3 class="project__title">Todo App</h3>
+            <router-link class="project__link" to="apps/quiz/">
+              <img
+                class="project__img"
+                src="@/assets/IconApps/quiz.jpg"
+                alt=""
+              />
+              <h3 class="project__title">Квиз</h3>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -73,6 +81,7 @@ export default {};
 }
 
 .section {
+  min-height: 100vh;
   background-color: #faaca8;
   background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
   padding: 70px 0;
@@ -82,6 +91,16 @@ export default {};
   color: #000;
   font-size: 44px;
   text-align: center;
+  font-weight: 400;
+
+  margin-bottom: 20px;
+}
+
+.section__subtitle {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
 
   margin-bottom: 60px;
 }
@@ -91,6 +110,7 @@ export default {};
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+  justify-content: center;
 }
 
 .project {

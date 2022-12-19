@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="main__score" v-else>
-          <h1>Игра закончена, ваш счет: {{ score }}</h1>
+          <h1 class="score__title">Игра закончена, ваш счет: {{ score }}</h1>
         </div>
       </div>
     </div>
@@ -189,5 +189,12 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.main__score {
+}
+
+.score__title {
+  text-align: center;
 }
 </style>

@@ -5,7 +5,7 @@
         <div class="footer__wrapper">
           <ul class="social">
             <li class="social__item">
-              <a href="#">
+              <a href="https://t.me/grime9">
                 <img
                   class="social__image"
                   src="@/assets/logo/telegram.svg"
@@ -14,7 +14,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="#">
+              <a href="https://github.com/NoNameNoMeme">
                 <img
                   class="social__image"
                   src="@/assets/logo/github.svg"

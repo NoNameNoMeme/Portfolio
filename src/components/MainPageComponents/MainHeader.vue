@@ -7,9 +7,11 @@
           Добро пожаловать на мое портфолио!
         </h1>
         <p class="header__subtitle">Frontend Developer (Junior)</p>
-        <button class="btn">
-          <span>GitHub</span>
-        </button>
+        <a href="https://github.com/NoNameNoMeme" target="_blank">
+          <button class="btn">
+            <span>GitHub</span>
+          </button>
+        </a>
       </div>
     </header>
   </div>
@@ -21,7 +23,7 @@ export default {};
 
 <style scoped>
 .header {
-  min-height: 800px;
+  min-height: 100vh;
   padding: 40px 0;
 
   display: flex;

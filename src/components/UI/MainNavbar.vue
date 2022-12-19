@@ -8,10 +8,10 @@
             <router-link class="nav-list__link" to="/">Home</router-link>
           </li>
           <li class="nav-list__item">
-            <router-link class="nav-list__link" to="/apps">Apps</router-link>
+            <a class="nav-list__link" href="#main-apps">Apps</a>
           </li>
           <li class="nav-list__item">
-            <router-link class="nav-list__link" to="/about">About</router-link>
+            <a class="nav-list__link" href="#main-skills">Skills</a>
           </li>
         </ul>
       </div>

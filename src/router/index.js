@@ -5,6 +5,7 @@ import AppsPage from "@/pages/AppsPage";
 import TodoApp from "@/pages/TodoApp";
 import QuizApp from "@/pages/QuizApp";
 import DiceApp from "@/pages/DiceApp";
+import RollShop from "@/pages/RollShop";
 import MovieListApp from "@/pages/MovieListApp";
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     path: "/apps/movielist",
     name: "movie-list-app",
     component: MovieListApp,
+  },
+  {
+    path: "/apps/rollshop",
+    name: "roll-shop-app",
+    component: RollShop,
   },
   {
     path: "/about",
